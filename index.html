@@ -1,10 +1,157 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-     <title>     </title>
-<body> 
- <h1>my webpage</h1>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AJSHA PARVEEN - Resume</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background: #eef2ff;
+        color: #1f2937;
+      }
+      .wrapper {
+        max-width: 900px;
+        margin: 32px auto;
+        background: #ffffff;
+        border-radius: 18px;
+        box-shadow: 0 18px 45px rgba(15, 23, 42, 0.12);
+        overflow: hidden;
+      }
+      header {
+        background: linear-gradient(135deg, #4338ca, #2563eb);
+        color: #ffffff;
+        padding: 32px;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 2.8rem;
+      }
+      header p {
+        margin: 16px 0 0;
+        line-height: 1.7;
+        opacity: 0.95;
+      }
+      .contact {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 14px;
+        margin-top: 22px;
+        font-size: 0.95rem;
+      }
+      .contact span {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+      }
+      section {
+        padding: 28px 36px;
+      }
+      section + section {
+        border-top: 1px solid #e5e7eb;
+      }
+      h2 {
+        margin: 0 0 18px;
+        font-size: 1.35rem;
+        color: #111827;
+      }
+      p {
+        margin: 0;
+        line-height: 1.75;
+        color: #475569;
+      }
+      .grid {
+        display: grid;
+        gap: 28px;
+      }
+      .item {
+        margin-bottom: 20px;
+      }
+      .item h3 {
+        margin: 0 0 8px;
+        font-size: 1.05rem;
+      }
+      .item span,
+      .item time {
+        display: block;
+        color: #6b7280;
+        font-size: 0.95rem;
+      }
+      ul {
+        margin: 12px 0 0 20px;
+      }
+      li {
+        margin-bottom: 8px;
+      }
+      .badges {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      .badge {
+        background: #e0e7ff;
+        color: #1e3a8a;
+        padding: 8px 14px;
+        border-radius: 999px;
+        font-size: 0.92rem;
+      }
+      @media (min-width: 720px) {
+        .grid {
+          grid-template-columns: 1fr 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>AJSHA PARVEEN</h1>
+        <p>Electronics and Instrumentation student with hands-on experience in IoT and embedded systems development.</p>
+        <div class="contact">
+          <span>📧 ajshakp@gmail.com</span>
+          <span>📞 +91 70259 42661</span>
+          <span>📍 Koonam Parambil (H), Palakkad 679552</span>
+        </div>
+      </header>
 
+      <section>
+        <h2>Education</h2>
+        <div class="item">
+          <h3>FISAT</h3>
+          <span>2nd Year</span>
+          <p>Electronics and Instrumentation</p>
+        </div>
+      </section>
 
-</body>
-   </head>
+      <section>
+        <div class="grid">
+          <div class="projects">
+            <h2>Projects</h2>
+            <div class="item">
+              <h3>ESP32 Sensor Monitoring System</h3>
+              <p>Developed an IoT-based sensor monitoring system using ESP32 microcontroller and Wi-Fi connectivity.</p>
+              <ul>
+                <li>Collected and transmitted real-time sensor data over a wireless network for remote monitoring.</li>
+                <li>Programmed the ESP32 using Arduino IDE and integrated sensor modules for data acquisition.</li>
+                <li>Implemented reliable communication between hardware and monitoring interface.</li>
+                <li>Gained hands-on experience in IoT, embedded systems, sensor interfacing, and wireless communication.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="skills">
+            <h2>Skills</h2>
+            <div class="badges">
+              <span class="badge">3D Printing</span>
+              <span class="badge">JavaScript</span>
+              <span class="badge">C Programming</span>
+              <span class="badge">Python</span>
+              <span class="badge">HTML</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  </body>
 </html>
